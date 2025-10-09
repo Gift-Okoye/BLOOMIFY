@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="body-wrapper">
+
+        <div class="nav-bar">
+
+            <div class="logo-button">
+                <a class="home" href="./index.html">
+                    <div class="logo">
+                        <img src="images/bloomify-logo.svg" alt="Bloomify Logo">
+                    </div>
+                </a>
+
+                <div class="expbtn">
+                    <img src="./images/Expand.svg" alt="Expand Btn">
+                </div>
+            </div>
+
+            <div class="navlinks">
+                
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">chart_data</span>
+                    <p>Analytics</p>
+                </div>
+
+                <a class="page-anchor" href="./order.html">
+                    <div class="nav-tab nav-tab-active">
+                        <span class="material-symbols-outlined">docs</span>
+                        <p>Order</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./cart.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <p>Cart</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./invoice.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">team_dashboard</span>
+                        <p>Invoice</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="title-bar">
+                <div class="title-container">
+                    <p class="page-heading">Order Management</p>
+                    <p class="page-sum">Manage all the parcel orders of super parcels from here</p>
+                </div>
+
+                <form class="search-container">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input type="search" name="search" id="search" class="search" placeholder="Search for Orders, Customers...">
+                </form>
+
+                <div class="profile-container">
+                    <a class="not-link" href="./service.html">
+                        <div class="notification">
+                            <img src="./images/Icon Frame.svg" alt="notification">
+                        </div>
+                    </a>
+
+                    <div class="profile-pic">
+                        <img src="images/animoji.svg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Total New Orders</p>
+
+                        <span class="material-symbols-outlined desc-icon">description</span>
+
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>594</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p>+15</p>
+
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Total Orders Pending</p>
+
+                        <span class="material-symbols-outlined desc-icon-1">deployed_code</span>
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>257,361</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p>+15</p>
+
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Total Product Sales</p>
+
+                        <span class="material-symbols-outlined desc-icon-2">receipt_long</span>
+
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>8,594</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p>-54%</p>
+
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Total New Orders</p>
+
+                        <span class="material-symbols-outlined desc-icon-3">local_shipping</span>
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>275,361</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p>-10</p>
+
+                            <span class="material-symbols-outlined">trending_down</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-wrapper">
+                <div class="title-container">
+                    <p class="page-heading">All Orders</p>
+                    <p class="page-sum">Keep Track of recent order data and other information</p>
+                </div>
+
+                <div class="filter-btn-container">
+                    <div class="filter-btn">
+                        <span class="material-symbols-outlined">filter_list</span>
+                        <p>All Filter</p>
+                        <span class="material-symbols-outlined">stat_minus_1</span>
+                    </div>
+
+                    <div class="filter-btn">
+                        <span class="material-symbols-outlined">publish</span>
+                        <p>Export CSV</p>
+                    </div>
+
+                    <div class="filter-btn">
+                        <span class="material-symbols-outlined">download</span>
+                        <p>Download Report</p>
+                    </div>
+
+                    <div class="filter-btn filter-main">
+                        <span class="material-symbols-outlined">add_2</span>
+                        <p>Add New Order</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-table">
+                <div class="table-title">
+                    <div class="cell">
+                        <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                        <p>Order ID</p>
+                    </div>
+
+                    <div class="cell">
+                        <p>Customer Name</p>
+                    </div>
+
+                    <div class="cell">
+                        <p>Product Name</p>
+                    </div>
+
+                    <div class="cell">
+                        <p>Order Date</p>
+                    </div>
+
+                    <div class="cell">
+                        <p>Delivery Status</p>
+                    </div>
+
+                    <div class="cell menu-cell">
+                        <p>Payment</p>
+                    </div>
+
+                    <div class="cell menu-cell">
+                        <p>Action</p>
+                    </div>
+
+                </div>
+
+                <div class="table-wrapper">
+
+                   <div class="row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row grey-row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip pending">
+                                <p>Pending</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row grey-row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip shipped">
+                                <p>Shipped</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip pending">
+                                <p>Pending</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row grey-row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip canceled">
+                                <p>Canceled</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row grey-row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row grey-row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip processing">
+                                <p>Processing</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                   <div class="row grey-row">
+                        <div class="table-cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>#302025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Victor Williamson</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>Wall Clock Special Edition</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <p>22 Jan 2025</p>
+                        </div>
+
+                        <div class="table-cell">
+                            <div class="table-chip completed">
+                                <p>completed</p>
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <div class="table-icon">
+                                <img src="./images/Visa icon.svg" alt="Payment Method">
+                            </div>
+                        </div>
+
+                        <div class="table-cell menu-cell">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+                   </div>
+
+                </div>
+
+                <div class="pagination-wrapper">
+
+                    <div class="direction">
+                        <div class="previous">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                            <p>Previous</p>
+                        </div>
+
+                        <div class="next">
+                            <p>Next</p>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+
+                    <div class="pages">
+                        <div class="num act-num">
+                            <p>1</p>
+                        </div>
+
+                        <div class="num">
+                            <p>2</p>
+                        </div>
+
+                        <div class="num">
+                            <p>3</p>
+                        </div>
+
+                        <div class="num">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+
+                        <div class="num">
+                            <p>9</p>
+                        </div>
+
+                        <div class="num">
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
